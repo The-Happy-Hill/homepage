@@ -36,36 +36,7 @@
     <!-- header-start -->
     <header>
         <div class="header-area ">
-            <div class="header-top_area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-6 col-md-12 col-lg-8">
-                            <div class="short_contact_list">
-                                <ul>
-                                    <li><a href="#"> <i class="fa fa-phone"></i> +1 (454) 556-5656</a></li>
-                                    <li><a href="#"> <i class="fa fa-envelope"></i>Yourmail@gmail.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-md-6 col-lg-4">
-                            <div class="social_media_links d-none d-lg-block">
-                                <a href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-pinterest-p"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div id="sticky-header" class="main-header-area">
                 <div class="container-fluid">
                     <div class="row align-items-center">
@@ -80,26 +51,13 @@
                             <div class="main-menu">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">home</a></li>
-                                        <li><a href="About.html">About</a></li>
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">elements</a></li>
-                                                <li><a href="Cause.html">Cause</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="#kehoach">Mô Tả & Mục Tiêu</a></li>
+                                        <li><a href="#kh2">Kế Hoạch</a></li>
                                     </ul>
                                 </nav>
                                 <div class="Appointment">
                                     <div class="book_btn d-none d-lg-block">
-                                        <a data-scroll-nav='1' href="#">Make a Donate</a>
+                                        <a data-scroll-nav='1' href="#">Ủng Hộ</a>
                                     </div>
                                 </div>
                             </div>
@@ -125,9 +83,11 @@
                             <h3>The Happy Hill</h3>
                             <!-- <p>With so much to consume and such little time, coming up <br>
                                 with relevant title ideas is essential</p> -->
-                            <a href="About.html" class="boxed-btn3">Learn More
+                            <a href="#kehoach" class="boxed-btn3">Tìm hiểu thêm
                             </a>
                         </div>
+                        
+
                     </div>
                 </div>
             </div>
@@ -136,7 +96,7 @@
     <!-- slider_area_end -->
 
     <!-- reson_area_start  -->
-    <div class="reson_area section_padding">
+    <div class="reson_area section_padding" id = "kehoach">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
@@ -150,7 +110,7 @@
                     <div class="single_reson">
                         <div class="help_content">
                             <h4>Mô Tả Dự Án</h4>
-                            <p>Dự án "The Happy Hill" được ra đời với sứ mệnh tạo ra một sân chơi an toàn cho các em nhỏ phía Tây Quảng Trị, kết hợp với xây dựng tủ sách cho mỗi lớp học tại điểm trường Húc Thượng, tỉnh Quảng Trị</p>
+                            <p>được ra đời vớDự án "The Happy Hill" i sứ mệnh tạo ra một sân chơi an toàn cho các em nhỏ phía Tây Quảng Trị, kết hợp với xây dựng tủ sách cho mỗi lớp học tại điểm trường Húc Thượng, tỉnh Quảng Trị</p>
                         </div>
                     </div>
                 </div>
@@ -171,25 +131,61 @@
     <!-- latest_activites_area_start  -->
     <div class="latest_activites_area">
         <div class="video_activite d-flex align-items-center justify-content-center">
-            <img src="cover.png" alt="Latest Activities Cover" style="width: 100%; height: auto; max-width: 100%; object-fit: contain;">
+            <!-- Bootstrap Carousel Section -->
+            <div id="happyHillCarousel" class="carousel slide" data-ride="carousel" style="width: 100%; height: 400px;">
+                <!-- Indicators/dots -->
+                <ol class="carousel-indicators">
+                    <li data-target="#happyHillCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#happyHillCarousel" data-slide-to="1"></li>
+                    <li data-target="#happyHillCarousel" data-slide-to="2"></li>
+                    <li data-target="#happyHillCarousel" data-slide-to="3"></li>
+                    <li data-target="#happyHillCarousel" data-slide-to="4"></li>
+                    <li data-target="#happyHillCarousel" data-slide-to="5"></li>
+                </ol>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="cover.png" class="d-block w-100" style="height: 400px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="kchi/anh1.jpg" class="d-block w-100" style="height: 400px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="kchi/anh2.jpg" class="d-block w-100" style="height: 400px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="kchi/anh3.jpg" class="d-block w-100" style="height: 400px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="kchi/anh4.JPG" class="d-block w-100" style="height: 400px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="kchi/anh5.JPG" class="d-block w-100" style="height: 400px; object-fit: cover; border-radius: 10px;">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <a class="carousel-control-prev" href="#happyHillCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#happyHillCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
         </div>
-        <div class="container">
+        <div class="container" >
             <div class="row justify-content-end">
                 <div class="col-lg-7">
-                    <div class="activites_info">
+                    <div class="activites_info" id="kh2">
                         <div class="section_title">
-                            <h3> <span>Watch Our Latest  </span><br>
-                                Activities</h3>
+                            <h3> <span> Kế Hoạch </h3>
                         </div>
-                        <p class="para_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do 
-                            eiusmod tempor incididunt  ut labore dolore magna aliqua. 
-                            enim minim veniam, quis nostrud exercitation.</p class="para_1">
-                        <p class="para_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do 
-                            eiusmod tempor incididunt  ut labore dolore magna aliqua. 
-                            enim minim veniam, quis nostrud exercitation. tempor 
-                            incididunt  ut labore dolore magna aliqua. enim minim 
-                            veniam, quis nostrud exercitation.</p>
-                        <a href="#" data-scroll-nav='1' class="boxed-btn4">Donate Now</a>
+                        <p class="para_1"> Lễ khánh thành sân chơi và xây dựng tủ sách dự kiến diễn ra vào ngày 16/8/2025
+                            
+                            </p class="para_1">
+                        <p class="para_2">Địa điểm: Điểm trường Húc Thượng, xã Húc, Huyện Hướng Hoá (cũ), tỉnh Quảng Trị.</p>
+                        <a href="#" data-scroll-nav='1' class="boxed-btn4">Ủng Hộ</a>
                     </div>
                 </div>
             </div>
@@ -200,7 +196,7 @@
 
 
     <!-- counter_area_start  -->
-    <div class="counter_area">
+    <!-- <div class="counter_area">
         <div class="container">
             <div class="counter_bg overlay">
                 <div class="row">
@@ -251,7 +247,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- counter_area_end  -->
 
     <!-- our_volunteer_area_start  -->
@@ -260,95 +256,46 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb-55">
-                        <h3><span>Our Volunteer</span></h3>
+                        <h3><span>Sáng Lập</span></h3>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="single_volenteer">
                         <div class="volenteer_thumb">
-                            <img src="img/volenteer/1.png" alt="">
+                            <img src="fou1.png" alt="Founder 1">
                         </div>
-                        <div class="voolenteer_info d-flex align-items-end">
-                            <div class="social_links">
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info_inner">
-                                <h4>Sakil khan</h4>
-                                <p>Donner</p>
-                            </div>
+                    </div>
+                    <div class="founder_info text-center">
+                        <h4>Trần Thái Phương</h4>
+                        <p>Đồng Sáng Lập</p>
+                        <p><a href="mailto:phuongtranqt196@gmail.com" style="color: #2952a1; font-size: 14px;">phuongtranqt196@gmail.com</a></p>
+                        <div class="social_links">
+                            <ul>
+                                <li>
+                                    <a href="https://web.facebook.com/tphuongyeubame"> <i class="fa fa-facebook"></i> </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="single_volenteer">
                         <div class="volenteer_thumb">
-                            <img src="img/volenteer/2.png" alt="">
-                        </div>
-                        <div class="voolenteer_info d-flex align-items-end">
-                            <div class="social_links">
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info_inner">
-                                <h4>Emran Ahmed</h4>
-                                <p>Volunteer</p>
-                            </div>
+                            <img src="foud2.png" alt="Founder 2">
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_volenteer">
-                        <div class="volenteer_thumb">
-                            <img src="img/volenteer/3.png" alt="">
-                        </div>
-                        <div class="voolenteer_info d-flex align-items-end">
-                            <div class="social_links">
-                                <ul>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-pinterest"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info_inner">
-                                <h4>Sabbir Ahmed</h4>
-                                <p>Volunteer</p>
-                            </div>
+                    <div class="founder_info text-center">
+                        <h4>Nguyễn Trần Khánh Chi</h4>
+                        <p>Đồng Sáng Lập</p>
+                        <p><a href="mailto:khanhchiqh09@gmail.com" style="color: #2952a1; font-size: 14px;">khanhchiqh09@gmail.com</a></p>
+                        <div class="social_links">
+                            <ul>
+                                <li>
+                                    <a href="https://web.facebook.com/khanh.chi.373716"> <i class="fa fa-facebook"></i> </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -363,7 +310,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb-55">
-                        <h3><span>News & Updates</span></h3>
+                        <h3><span>Tin Tức & Cập Nhật</span></h3>
                     </div>
                 </div>
             </div>
@@ -372,36 +319,30 @@
                     <div class="news_active owl-carousel">
                         <div class="single__blog d-flex align-items-center">
                             <div class="thum">
-                                <img src="img/news/1.png" alt="">
+                                <img src="cover.png" alt="The Happy Hill">
                             </div>
                             <div class="newsinfo">
-                                <span>July 18, 2019</span>
-                                <a href="single-blog.html">
-                                    <h3>Pure Water Is More 
-                                        Essential</h3>
+                                <span>16/8/2025</span>
+                                <a href="#">
+                                    <h3>Lễ Khánh Thành Sân Chơi 
+                                        The Happy Hill</h3>
                                 </a>
-                                <p>The passage experienced a 
-                                    surge in popularity during the 
-                                    1960s when used it on their  
-                                    sheets, and again.</p>
-                                <a class="read_more" href="single-blog.html">Read More</a>
+                                <p>Dự án "The Happy Hill" sẽ được khánh thành vào ngày 16/8/2025 tại điểm trường Húc Thượng, tỉnh Quảng Trị.</p>
+                                <a class="read_more" href="#">Xem thêm</a>
                             </div>
                         </div>
                         <div class="single__blog d-flex align-items-center">
                             <div class="thum">
-                                <img src="img/news/2.png" alt="">
+                                <img src="kchi/anh1.jpg" alt="Hoạt động">
                             </div>
                             <div class="newsinfo">
-                                <span>July 18, 2019</span>
-                                <a href="single-blog.html">
-                                    <h3>Pure Water Is More 
-                                        Essential</h3>
+                                <span>Tháng 8/2025</span>
+                                <a href="#">
+                                    <h3>Xây Dựng Tủ Sách 
+                                        Cho Trẻ Em</h3>
                                 </a>
-                                <p>The passage experienced a 
-                                    surge in popularity during the 
-                                    1960s when used it on their  
-                                    sheets, and again.</p>
-                                <a class="read_more" href="single-blog.html">Read More</a>
+                                <p>Dự án không chỉ xây dựng sân chơi mà còn lắp đặt tủ sách trong mỗi lớp học để khơi gợi niềm yêu thích đọc sách.</p>
+                                <a class="read_more" href="#">Xem thêm</a>
                             </div>
                         </div>
                     </div>
@@ -422,31 +363,23 @@
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="img/footer_logo.png" alt="">
+                                    <img src="logokc.png" alt="The Happy Hill">
                                 </a>
                             </div>
-                            <p class="address_text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore.
+                            <p class="address_text">Lễ khánh thành sân chơi và xây dựng tủ sách dự kiến diễn ra vào ngày 16/8/2025
+                                Địa điểm: Điểm trường Húc Thượng, xã Húc, Huyện Hướng Hoá (cũ), tỉnh Quảng Trị.
+                                
                             </p>
                             <div class="socail_links">
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://web.facebook.com/tphuongyeubame">
                                             <i class="ti-facebook"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            <i class="ti-twitter-alt"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-dribbble"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-instagram"></i>
+                                        <a href="https://web.facebook.com/khanh.chi.373716">
+                                            <i class="fa fa-facebook"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -457,28 +390,29 @@
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                Services
+                                Dự Án
                             </h3>
                             <ul class="links">
-                                <li><a href="#">Donate</a></li>
-                                <li><a href="#">Sponsor</a></li>
-                                <li><a href="#">Fundraise</a></li>
-                                <li><a href="#">Volunteer</a></li>
-                                <li><a href="#">Partner</a></li>
-                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#kehoach">Mô Tả Dự Án</a></li>
+                                <li><a href="#kehoach">Mục Tiêu</a></li>
+                                <li><a href="#kehoach">Kế Hoạch</a></li>
+                                <li><a href="#kehoach">Địa Điểm</a></li>
+                                <li><a href="#kehoach">Thời Gian</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                Contacts
+                                Liên Hệ
                             </h3>
                             <div class="contacts">
-                                <p>+2(305) 587-3407 <br>
-                                    info@loveuscharity.com <br>
-                                    Flat 20, Reynolds Neck, North
-                                    Helenaville, FV77 8WS
+                                <p>Trần Thái Phương <br>
+                                    Email: phuongtranqt196@gmail.com <br>
+                                    Nguyễn Trần Khánh Chi <br>
+                                    Email: khanhchiqh09@gmail.com <br>
+                                    Điểm trường Húc Thượng, xã Húc, <br>
+                                    Huyện Hướng Hoá, tỉnh Quảng Trị
                                 </p>
                             </div>
                         </div>
@@ -486,35 +420,35 @@
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                Top News
+                                Tin Tức
                             </h3>
                             <ul class="news_links">
                                 <li>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img src="img/news/news_1.png" alt="">
+                                            <img src="cover.png" alt="The Happy Hill">
                                         </a>
                                     </div>
                                     <div class="info">
                                         <a href="#">
-                                            <h4>School for African 
-                                                Childrens</h4>
+                                            <h4>Lễ Khánh Thành 
+                                                The Happy Hill</h4>
                                         </a>
-                                        <span>Jun 12, 2019</span>
+                                        <span>16/8/2025</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="thumb">
                                         <a href="#">
-                                            <img src="img/news/news_2.png" alt="">
+                                            <img src="kchi/anh1.jpg" alt="Hoạt động">
                                         </a>
                                     </div>
                                     <div class="info">
                                         <a href="#">
-                                            <h4>School for African 
-                                                Childrens</h4>
+                                            <h4>Xây Dựng Tủ Sách 
+                                                Cho Trẻ Em</h4>
                                         </a>
-                                        <span>Jun 12, 2019</span>
+                                        <span>Tháng 8/2025</span>
                                     </div>
                                 </li>
                             </ul>
@@ -529,9 +463,7 @@
                     <div class="bordered_1px "></div>
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> The Happy Hill. & <a href="https://github.com/phancddev" target="_blank" style="color: #fff; text-decoration: underline;">phancddev</a> All rights reserved.</p>
                         </p>
                     </div>
                 </div>
@@ -569,6 +501,75 @@
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+    
+    <!-- QR Popup -->
+    <div id="qrPopup" class="qr-popup">
+        <div class="qr-popup-content">
+            <span class="qr-close">&times;</span>
+            <h3>Quét mã QR để ủng hộ</h3>
+            <img src="QR.png" alt="QR Code" class="qr-image">
+            <div class="bank-info">
+                <p><strong>📩 Mọi sự ủng hộ xin vui lòng gửi về:</strong></p>
+                <p><strong>👉🏻 STK:</strong> 1052134924 - Ngân hàng TMCP Ngoại thương Việt Nam (Vietcombank)</p>
+                <p><strong>👉🏻 Tên tài khoản:</strong> NGUYEN TRAN KHANH CHI</p>
+                <p><strong>👉🏻 Nội dung chuyển khoản:</strong> Họ và tên + The Happy Hill</p>
+            </div>
+            <button class="qr-ok-btn">OK</button>
+        </div>
+    </div>
+
+    <!-- Auto slide carousel script -->
+    <script>
+        $(document).ready(function() {
+            $('#happyHillCarousel').carousel({
+                interval: 2000  // 2 seconds
+            });
+            
+            // QR Popup functionality
+            const qrPopup = document.getElementById('qrPopup');
+            const qrClose = document.querySelector('.qr-close');
+            
+            // Open popup when clicking Ủng Hộ buttons
+            document.querySelectorAll('a[href="#"], .boxed-btn4').forEach(function(button) {
+                if (button.textContent.includes('Ủng Hộ') || button.textContent.includes('Donate')) {
+                    button.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        qrPopup.style.display = 'block';
+                        document.body.style.overflow = 'hidden'; // Prevent scrolling
+                    });
+                }
+            });
+            
+            // Close popup when clicking X button
+            qrClose.addEventListener('click', function() {
+                qrPopup.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            });
+            
+            // Close popup when clicking OK button
+            document.querySelector('.qr-ok-btn').addEventListener('click', function() {
+                qrPopup.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            });
+            
+            // Close popup when clicking outside
+            qrPopup.addEventListener('click', function(e) {
+                if (e.target === qrPopup) {
+                    qrPopup.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Close popup with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && qrPopup.style.display === 'block') {
+                    qrPopup.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

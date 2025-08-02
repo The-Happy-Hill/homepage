@@ -244,28 +244,32 @@ $('.causes_active').owlCarousel({
 $('.news_active').owlCarousel({
   loop:true,
   margin:30,
-// autoplay:true,
+  autoplay:true,
   navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
   nav:false,
-  dots:false,
-// autoplayHoverPause: true,
-// autoplaySpeed: 800,
+  dots:true,
+  autoplayHoverPause: true,
+  autoplaySpeed: 3000,
+  autoplayTimeout: 3000,
   responsive:{
       0:{
           items:1,
-          nav:false
-
+          nav:false,
+          dots:true
       },
       767:{
           items:1,
-          nav:false
+          nav:false,
+          dots:true
       },
       992:{
           items:2,
-          nav:false
+          nav:false,
+          dots:true
       },
       1200:{
           items:2,
+          dots:true
       }
   }
 });

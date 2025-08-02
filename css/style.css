@@ -3374,6 +3374,7 @@ h3 {
 /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
 .our_volunteer_area .single_volenteer {
   position: relative;
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
@@ -3392,11 +3393,10 @@ h3 {
 
 /* line 10, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
 .our_volunteer_area .single_volenteer .volenteer_thumb {
-  padding-right: 70px;
-  padding-bottom: 90px;
   position: relative;
   z-index: 12;
   overflow: hidden;
+  border-radius: 7px;
 }
 
 /* line 17, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
@@ -3418,14 +3418,21 @@ h3 {
   bottom: 0;
   background: #fff;
   left: 40px;
-  top: 90px;
+  top: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 30px;
+  flex-direction: column;
 }
 
 /* line 31, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
 .our_volunteer_area .single_volenteer .voolenteer_info .info_inner {
-  padding: 20px 40px;
+  padding: 0;
   position: relative;
   z-index: 100;
+  flex: 1;
+  margin-bottom: 15px;
 }
 
 /* line 35, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
@@ -3444,31 +3451,41 @@ h3 {
 
 /* line 46, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
 .our_volunteer_area .single_volenteer .voolenteer_info .social_links {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  right: 30px;
+  position: static;
   z-index: 99;
+  margin-left: 0;
+  margin-top: 10px;
 }
 
 /* line 53, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
 .our_volunteer_area .single_volenteer .voolenteer_info .social_links ul li {
-  display: block;
-  margin-bottom: 20px;
+  display: inline-block;
+  margin: 0 10px 0 0;
 }
 
 /* line 56, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
 .our_volunteer_area .single_volenteer .voolenteer_info .social_links ul li:last-child {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 
 /* line 59, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
 .our_volunteer_area .single_volenteer .voolenteer_info .social_links ul li a {
-  font-size: 16px;
-  color: #222222;
+  font-size: 18px;
+  color: #2952a1;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(41, 82, 161, 0.1);
+  transition: all 0.3s ease;
+}
+
+.our_volunteer_area .single_volenteer .voolenteer_info .social_links ul li a:hover {
+  background: #2952a1;
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_news.scss */
@@ -3493,6 +3510,57 @@ h3 {
   .news__area .single__blog {
     display: block !important;
   }
+  
+  /* Ensure news area is visible on mobile */
+  .news__area {
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  .news__area .news_active {
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  .news__area .single__blog {
+    margin-bottom: 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .news__area .single__blog .thum {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .news__area .single__blog .thum img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .news__area .single__blog .newsinfo {
+    padding: 0 15px 20px;
+    text-align: center;
+  }
+  
+  .news__area .single__blog .newsinfo h3 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 15px;
+  }
+  
+  .news__area .single__blog .newsinfo p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .news__area .single__blog .newsinfo .read_more {
+    margin-top: 15px;
+  }
 }
 
 /* line 12, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_news.scss */
@@ -3505,6 +3573,74 @@ h3 {
   /* line 12, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_news.scss */
   .news__area .single__blog .thum img {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Tablet responsive for news */
+  .news__area .single__blog {
+    margin-bottom: 25px;
+  }
+  
+  .news__area .single__blog .thum img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+  
+  .news__area .single__blog .newsinfo {
+    padding: 15px 25px;
+  }
+  
+  .news__area .single__blog .newsinfo h3 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  
+  .news__area .single__blog .newsinfo p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+/* Style for news carousel dots */
+.news__area .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.news__area .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.news__area .owl-dot span {
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.news__area .owl-dot.active span {
+  background-color: #2952a1;
+  transform: scale(1.2);
+}
+
+.news__area .owl-dot:hover span {
+  background-color: #2952a1;
+}
+
+/* Responsive for dots */
+@media (max-width: 767px) {
+  .news__area .owl-dots {
+    margin-top: 15px;
+  }
+  
+  .news__area .owl-dot span {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -6884,6 +7020,515 @@ h6 {
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+}
+
+/* Bootstrap Carousel Custom Styling */
+#happyHillCarousel {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#happyHillCarousel .carousel-indicators {
+    bottom: 10px;
+}
+
+#happyHillCarousel .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+#happyHillCarousel .carousel-indicators li.active {
+    background-color: #2952a1;
+    border-color: #2952a1;
+}
+
+#happyHillCarousel .carousel-control-prev,
+#happyHillCarousel .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(41, 82, 161, 0.9);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 15px;
+    border: 2px solid white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+#happyHillCarousel .carousel-control-prev-icon,
+#happyHillCarousel .carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1);
+}
+
+/* Responsive for carousel */
+@media (max-width: 767px) {
+    #happyHillCarousel {
+        max-width: 100% !important;
+        height: 250px !important;
+    }
+    
+    #happyHillCarousel .carousel-item img {
+        height: 250px !important;
+    }
+    
+    #happyHillCarousel .carousel-control-prev,
+    #happyHillCarousel .carousel-control-next {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #happyHillCarousel {
+        height: 350px !important;
+    }
+    
+    #happyHillCarousel .carousel-item img {
+        height: 350px !important;
+    }
+}
+
+/* Footer styling to match website theme */
+.footer {
+    background-color: #2952a1 !important;
+}
+
+.footer .footer_top {
+    background-color: #2952a1 !important;
+}
+
+.footer .copy-right_text {
+    background-color: #1e3d7a !important;
+}
+
+.footer_widget .footer_title {
+    color: #ffffff !important;
+}
+
+.footer_widget .address_text,
+.footer_widget .contacts p,
+.footer_widget .links li a,
+.footer_widget .news_links .info h4,
+.footer_widget .news_links .info span {
+    color: #ffffff !important;
+}
+
+.footer_widget .socail_links ul li a {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+}
+
+.footer_widget .socail_links ul li a:hover {
+    background-color: #ffffff !important;
+    color: #2952a1 !important;
+}
+
+.copy_right {
+    color: #ffffff !important;
+}
+
+/* Additional responsive improvements */
+@media (max-width: 767px) {
+    /* Improve mobile navigation */
+    .main-menu {
+        display: none;
+    }
+    
+    .mobile_menu {
+        display: block !important;
+    }
+    
+    /* Improve slider text on mobile */
+    .slider_text h3 {
+        font-size: 28px !important;
+        line-height: 1.2;
+    }
+    
+    .slider_text .boxed-btn3 {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+    
+    /* Improve carousel on mobile */
+    #happyHillCarousel {
+        height: 250px !important;
+    }
+    
+    #happyHillCarousel .carousel-item img {
+        height: 250px !important;
+    }
+    
+    /* Improve reason boxes on mobile */
+    .single_reson {
+        margin-bottom: 20px;
+    }
+    
+    .help_content {
+        padding: 20px 15px;
+    }
+    
+    .help_content h4 {
+        font-size: 18px;
+    }
+    
+    .help_content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    /* Improve volunteer section on mobile */
+    .single_volenteer {
+        margin-bottom: 30px;
+    }
+    
+    /* Improve footer on mobile */
+    .footer_widget {
+        margin-bottom: 30px;
+    }
+    
+    .footer_widget .footer_title {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Tablet improvements */
+    .slider_text h3 {
+        font-size: 32px;
+    }
+    
+    #happyHillCarousel {
+        height: 300px !important;
+    }
+    
+    #happyHillCarousel .carousel-item img {
+        height: 300px !important;
+    }
+    
+    .help_content h4 {
+        font-size: 20px;
+    }
+}
+
+/* Fix for very small screens */
+@media (max-width: 480px) {
+    .slider_text h3 {
+        font-size: 24px !important;
+    }
+    
+    .section_title h3 {
+        font-size: 20px !important;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* QR Popup Styling */
+.qr-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.qr-popup-content {
+    position: relative;
+    background-color: #ffffff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease-out;
+}
+
+.qr-popup h3 {
+    color: #2952a1;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.qr-image {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bank-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #2952a1;
+}
+
+.bank-info p {
+    color: #333;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.bank-info p:first-child {
+    color: #2952a1;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.qr-ok-btn {
+    background-color: #2952a1;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(41, 82, 161, 0.3);
+}
+
+.qr-ok-btn:hover {
+    background-color: #1e3d7a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(41, 82, 161, 0.4);
+}
+
+.qr-ok-btn:active {
+    transform: translateY(0);
+}
+
+.qr-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.qr-close:hover {
+    color: #2952a1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive for QR popup */
+@media (max-width: 767px) {
+    .qr-popup-content {
+        margin: 5% auto;
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .qr-image {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .qr-popup h3 {
+        font-size: 20px;
+    }
+    
+    .bank-info {
+        padding: 12px;
+    }
+    
+    .bank-info p {
+        font-size: 13px;
+    }
+}
+
+/* Mobile responsive for volunteer section */
+@media (max-width: 767px) {
+    .our_volunteer_area .single_volenteer .voolenteer_info {
+        position: relative;
+        padding: 20px 15px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+    }
+    
+    .our_volunteer_area .single_volenteer .voolenteer_info .social_links {
+        position: static;
+        margin-top: 15px;
+        text-align: center;
+        transform: none;
+        margin-left: 0;
+    }
+    
+    .our_volunteer_area .single_volenteer .voolenteer_info .info_inner {
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    
+    .our_volunteer_area .single_volenteer .voolenteer_info .info_inner h4 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    
+    .our_volunteer_area .single_volenteer .voolenteer_info .info_inner p {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .our_volunteer_area .single_volenteer .voolenteer_info .info_inner p a {
+        font-size: 12px;
+        word-break: break-word;
+    }
+    
+    .our_volunteer_area .single_volenteer .voolenteer_info .social_links ul li {
+        display: inline-block;
+        margin: 0 15px 0 0;
+    }
+    
+    .our_volunteer_area .single_volenteer .voolenteer_info .social_links ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+    
+    .our_volunteer_area .single_volenteer .voolenteer_info .social_links ul li:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Tablet responsive for volunteer section */
+@media (min-width: 768px) and (max-width: 991px) {
+  .our_volunteer_area .single_volenteer {
+    margin-bottom: 30px;
+  }
+  
+  .our_volunteer_area .single_volenteer .voolenteer_info {
+    left: 20px;
+    right: 20px;
+    top: 130px;
+    padding: 15px 20px;
+  }
+  
+  .our_volunteer_area .single_volenteer .voolenteer_info .info_inner h4 {
+    font-size: 18px;
+  }
+  
+  .our_volunteer_area .single_volenteer .voolenteer_info .info_inner p {
+    font-size: 13px;
+  }
+  
+  .our_volunteer_area .single_volenteer .voolenteer_info .info_inner p a {
+    font-size: 12px;
+  }
+}
+
+/* Custom styles for founder info */
+.founder_info {
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.founder_info h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 5px;
+}
+
+.founder_info p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #222222;
+}
+
+.founder_info .social_links {
+  margin-top: 15px;
+}
+
+.founder_info .social_links ul {
+  display: flex;
+  justify-content: center;
+}
+
+.founder_info .social_links ul li a {
+  font-size: 18px;
+  color: #2952a1;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(41, 82, 161, 0.1);
+  transition: all 0.3s ease;
+}
+
+.founder_info .social_links ul li a:hover {
+  background: #2952a1;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+  .founder_info {
+    margin-top: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .founder_info {
+    margin-top: 15px;
+    padding: 15px;
+  }
+  
+  .founder_info h4 {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
